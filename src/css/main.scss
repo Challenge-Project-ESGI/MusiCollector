@@ -85,7 +85,7 @@ button{
 body{
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #fbfbfb;
+	background-color: #111111;
 
 	& > footer{
 		padding: 1rem 0;
@@ -177,9 +177,8 @@ img{
 }
 
 #section1{
-	background-color: #fbfbfb;
-	height: 640px;
-	padding-bottom: 20px;
+	height: 750px;
+	padding: 75px 0 0 0;
 	color: white;
 	background-size: cover;
 	background-position: right center;
@@ -199,7 +198,7 @@ img{
 	}
 
 	& h1{
-		font-size: 96px;
+		font-size: 1.125rem;
 		margin-bottom: 0;
 	}
 
@@ -219,36 +218,43 @@ img{
 }
 
 #section2{
-	background-color: white;
-	padding: 40px 0;
 
 	& .container{
 		display: flex;
 		flex-direction: column;
 
 		& > h1{
-			text-align: center;
-			font-size: 48px;
-		}
-
-		& div{
-			display: flex;
+			color: #fbfbfb;
+			font-size: 1.125rem;;
 		}
 	}
 }
 
 .benefit{
-	padding: 30px;
-	width: 25%;
-	text-align: center;
-
-	& h1{
-		font-size: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	& img, & div div{
+		display: flex;
+		min-width: 205px;
+		max-width: 205px;
+    	justify-content: space-between;
 	}
 
-	& h2{
-		font-size: 14px;
-		font-weight: 400;
+	& h1{
+		font-size: 1rem;
+		color: #fbfbfb;
+		margin: 0;
+	}
+
+	& p{
+		color: #cfcfcf;
+		font-size: 0.7rem;
+		font-weight: 200;
+	}
+
+	& p:nth-child(2){
+		color: #d0ad5c;
 	}
 
 	& figure{
@@ -257,7 +263,6 @@ img{
 }
 
 #section3{
-	background-color: #F8F8F8;
 	padding: 40px 0;
 
 	& .container{
@@ -340,6 +345,10 @@ img{
 	display: none;
 }
 
+.container h1{
+	min-width: max-content;
+}
+
 
 @media screen and (max-width: 1000px){
 
@@ -380,20 +389,15 @@ img{
 		}
 	}
 
+	.benefit{
+	
+		& div div, & img{
+			max-width: 120px;
+			min-width: 120px;
+		}
+	}
 	#menu-button{
 		display: inline-block;
-	}
-
-	#section1 h1{
-		font-size: 40px;
-	}
-
-	#section2 .container div{
-		flex-direction: column;
-	}
-
-	.benefit{
-		width: 100%;
 	}
 
 	.offers-container{
@@ -417,30 +421,26 @@ img{
 }
 
 .controle{
-	
 	display:grid;
 	grid:2rem/repeat(2,1fr);
-	place-items:center
-		
+	place-items:center;
+	padding: 50px;	
 		}
 		
-	.controle button{
-		 
+	.controle button{ 
 	font-size: 2rem;
 	border: none;
 	cursor: pointer;
-	background: #eee
-	
+	color:#fbfbfb;	
 		} 
-		
-		
-	.contenu-carrousel {
-		
+			
+	.contenu-carrousel {	
 	margin: 5rem auto;
 	width: 300px;
 	height: 200px;
 	position: relative;
-	perspective: 1000px
+	perspective: 1000px;
+	padding-top: 75px;
 		
 	}
 	
