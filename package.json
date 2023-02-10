@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "sass src/css/main.scss dist/css/main.css --watch"
+    "compile": "sass src/css/main.scss dist/css/main.css --watch",
+    "compile": "sass src/css/achat.scss dist/css/achat.css --watch",
+    "compile": "sass src/css/abonnement.scss dist/css/abonnement.css --watch",
+    "compile": "sass src/css/panier.scss dist/css/panier.css --watch",
+    "compile": "sass src/css/accueil.scss dist/css/accueil.css --watch"
+
+  },
+  "scripts": {
+    "compile": "sass src/css/abonnement.scss dist/css/abonnement.css --watch"
   },
   "keywords": [],
   "author": "",
