@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>MusiCollector</title>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../dist/css/main.css">
-		<link rel="stylesheet" href="../dist/css/a">
+		<link rel="stylesheet" type="text/css" href="../dist/css/pages/main.css">
+		<link rel="stylesheet" href="../dist/css/pages/achat.css">
+		<script src="../src/js/JQuery 3.5.1.js"></script>
 		<script src="../src/js/main.js"></script>
 	</head>
 	<body>
@@ -37,5 +37,29 @@
 				</article>
 			</section>
 		</main>
+		<footer>
+			<div class="container">
+				<nav>
+					<div>
+						<a href=""><img src="../src/assets/images/facebook.svg" alt=""></a>
+						<a href=""><img src="../src/assets/images/twitter.svg" alt=""></a>
+						<a href=""><img src="../src/assets/images/instagram.svg" alt=""></a>
+						<a href=""><img src="../src/assets/images/youtube.svg" alt=""></a>
+					</div>
+					<p>Mentions</p>
+					<p>Conditions d’utilisation</p>
+					<p>Conditions générales de vente</p>
+					<small>
+						© 2023 MusiCollector, Inc. Tous droits réservés
+					</small>
+				</nav>
+			
+			</div>
+		</footer>
+		<script type="text/javascript">
+			document.getElementById('menu-button').addEventListener('click', function(e){
+				document.getElementById('site-nav').classList.toggle('open');
+			})
+		</script>
 	</body>
 </html>
