@@ -118,6 +118,7 @@ nav a:hover {
 					display: flex;
 					min-width: max-content;
 					padding: 12px;
+					justify-content: space-between;
 
 					& aside{
 						display: flex;
@@ -176,10 +177,6 @@ nav a:hover {
 			font-weight: 400;
 		}
 	} 
-}
-
-.fa-user-circle-o{
-	display: none;
 }
 
 .container h1{
@@ -301,4 +298,4 @@ nav a:hover {
 	transform: rotateY(300deg) translateZ(270px);
 	background:url(image.jpg) no-repeat center center/cover
 		
-	}	
+	}

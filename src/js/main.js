@@ -1,5 +1,4 @@
 var angle = 0;
-document.querySelector('.container').className='test';
 
 function carrousel(sign){
 

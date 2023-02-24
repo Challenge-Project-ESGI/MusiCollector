@@ -62,6 +62,10 @@ body{
 		background-color: black;
 		color: white;
 		font-size: 12px;
+
+		& div.container nav{
+			text-align: center;
+		}
 	}
 }
 
@@ -88,7 +92,6 @@ img{
 }
 
 .container{
-	max-width: 1170px;
 	margin: auto;
 }
 
@@ -101,7 +104,7 @@ img{
 			display: inline-block;
 			width: 2rem;
 			height: 2rem;
-			background-image: url('../../../src/assets/images/menu.svg');
+			background-image: url('../../../src/assets/images/shopping.svg');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
@@ -153,7 +156,7 @@ header{
 			display: inline-block;
 			width: 2rem;
 			height: 2rem;
-			background-image: url('../../assets/images/menu.svg');
+			background-image: url('../../../src/assets/images/shopping.svg');
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
@@ -166,9 +169,17 @@ header{
 	}
 }
 
-	body > footer ul{
-		flex-direction: column;
-	}
+
+	body > footer{
+
+		& ul{
+			flex-direction: column;
+		}
+		
+		& div.container nav{
+			text-align: inherit;
+		}
+	} 
 
 }
 
