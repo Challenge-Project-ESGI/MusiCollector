@@ -1,0 +1,138 @@
+$main-color: #FFB200;
+$secondary-color: #B9C4E4;
+$tertiary-color: #7DE7FE;
+
+.div1{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.div2, .div3, .div4 {
+  height: 627px;
+  width: 358px;
+  border-radius: 20px;
+  border: 6px solid;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-width: 358px;
+    margin-top: 20px;
+  }
+
+  &.div2 {
+    border-color: $main-color;
+    background-color: white;
+  }
+
+  &.div3 {
+    border-color: #B9C4E4;
+    background-color: rgb(68, 153, 68);
+
+    @media (max-width: 1200px) {
+      background-color: white;
+    }
+  }
+
+  &.div4 {
+    border-color: $tertiary-color;
+    background-color: white;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+
+  &.offer {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+}
+
+.offers-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .offer {
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+      margin: 0;
+      text-align: center;
+
+      &.offer {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+
+      small {
+        font-size: 60%;
+        font-weight: 400;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      padding: 40px;
+      border-top: solid thin lightgrey;
+      border-bottom: solid thin lightgrey;
+
+      li {
+        margin-bottom: 1em;
+
+        &:last-child {
+          margin-bottom: 2;
+        }
+
+        &.disabled {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.cta-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: $main-color;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px gray;
+
+  &.platine {
+    background-color: $secondary-color;
+  }
+
+  &.diamant {
+    background-color: $tertiary-color;
+  }
+}
