@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "sass src/scss/pages/:dist/css/pages/ --watch"
+    "compile": "sass src/scss/:dist/css/ --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.58.0"
+    "sass": "^1.58.3"
   }
 }

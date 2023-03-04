@@ -4,62 +4,128 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>MusiCollector</title>
-		<link rel="stylesheet" type="text/css" href="../dist/css/pages/main.css">
+		<!-- <link rel="stylesheet" type="text/css" href="../dist/css/pages/main.css"> -->
 		<link rel="stylesheet" href="../dist/css/pages/achat.css">
 		<script src="../src/js/JQuery 3.5.1.js"></script>
 		<script src="../src/js/main.js"></script>
 	</head>
 	<body>
-		
-		<header>
-			<div class="container">
-				<button id="menu-button"></button>
-
-				<a href="Index.html" id="logo-link">
-					<img src="../src/assets/images/LOGOMusiCollector.svg" alt="MC">
-				</a>
-				<a id="shop-button" href=""></a>
-				<nav id="site-nav">
-					<ul>
-						<li><a href="Index.html">Accueil</a></li>
-						<li><a href="achat.html">Les albums</a></li>
-						<li><a href="abonnement.html">Abonnement</a></li>
-						<li><a href="#">|</a></li>
-						<li><a id="shop-button" href="panier.html"></a></li>
-					</ul>
-				</nav>
+		<div class="infos-album">
+			<div class="cover-album">
+				<img src="../src/assets/images/tiakolaAlbum.jpg" alt="" class="img-album-tiakola">
 			</div>
-		</header>
-		<main>
-			<section class="section-album">
-				<img src="" alt="" class="cover-album">
-				<article class="infos-album">
+			<div class="details-album">
+				<h1 class="titre-melo">Mélo</h1>
+				<h2 class="sous-titre-tiakola">Tiakola</h2>
+				<article class="description-album">
+					Le nouveau prince de la musique urbaine a sortie son premier album plein d’ambitions. Il y mélange son mélancoliques et beaucoup de musiques dansantes.
 				</article>
-			</section>
-		</main>
-		<footer>
-			<div class="container">
-				<nav>
-					<div>
-						<a href=""><img src="../src/assets/images/facebook.svg" alt=""></a>
-						<a href=""><img src="../src/assets/images/twitter.svg" alt=""></a>
-						<a href=""><img src="../src/assets/images/instagram.svg" alt=""></a>
-						<a href=""><img src="../src/assets/images/youtube.svg" alt=""></a>
-					</div>
-					<p>Mentions</p>
-					<p>Conditions d’utilisation</p>
-					<p>Conditions générales de vente</p>
-					<small>
-						© 2023 MusiCollector, Inc. Tous droits réservés
-					</small>
-				</nav>
-			
+				<p class="prix-album">16,99€</p>
+				<div class="div-btn-acheter-album">
+					<input type="button" value="Acheter l'album" class="btn-acheter-album">
+				</div>
 			</div>
-		</footer>
-		<script type="text/javascript">
-			document.getElementById('menu-button').addEventListener('click', function(e){
-				document.getElementById('site-nav').classList.toggle('open');
-			})
-		</script>
+		</div>
+			<div class="infos-chanson">
+				<div class="numero-chanson titre-column-tracklist">#</div>
+				<div class="titre-chanson titre-column-tracklist">Titre</div>
+				<div class="temps-chanson titre-column-tracklist">Durée</div>
+			</div>
+		<hr class="hr-tracklist">
+			<div class="infos-chanson">
+				<div class="numero-chanson">1.</div>
+				<div class="titre-chanson">1ntr'o</div>
+				<div class="temps-chanson">3:32</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">2.</div>
+				<div class="titre-chanson">#TT</div>
+				<div class="temps-chanson">2:40</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">3.</div>
+				<div class="titre-chanson">Arsenik</div>
+				<div class="temps-chanson">3:28</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">4.</div>
+				<div class="titre-chanson">Parapluie</div>
+				<div class="temps-chanson">4:05</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">5.</div>
+				<div class="titre-chanson">La clé</div>
+				<div class="temps-chanson">2:53</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">6.</div>
+				<div class="titre-chanson">Mode AV (feat. Niska & Gazo)</div>
+				<div class="temps-chanson">3:13</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">7.</div>
+				<div class="titre-chanson">Si j'savais</div>
+				<div class="temps-chanson">3:43</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">8.</div>
+				<div class="titre-chanson">Meuda</div>
+				<div class="temps-chanson">2:34</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">9.</div>
+				<div class="titre-chanson">Gasolina (feat. Rsko)</div>
+				<div class="temps-chanson">3:03</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">10.</div>
+				<div class="titre-chanson">Soza</div>
+				<div class="temps-chanson">3:41</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">11.</div>
+				<div class="titre-chanson">Riri / No camera</div>
+				<div class="temps-chanson">5:58</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">12.</div>
+				<div class="titre-chanson">Mélo</div>
+				<div class="temps-chanson">2:19</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">13.</div>
+				<div class="titre-chanson">Atasanté (feat. Hamza)</div>
+				<div class="temps-chanson">3:35</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">14.</div>
+				<div class="titre-chanson">Roro (feat. SDM)</div>
+				<div class="temps-chanson">3:15</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">15.</div>
+				<div class="titre-chanson">Coucher de soleil</div>
+				<div class="temps-chanson">4:25</div>
+			</div>
+			<hr>
+			<div class="infos-chanson">
+				<div class="numero-chanson">16.</div>
+				<div class="titre-chanson">R.I.Peace</div>
+				<div class="temps-chanson">3:46</div>
+			</div>
 	</body>
 </html>

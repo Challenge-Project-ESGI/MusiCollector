@@ -1,0 +1,132 @@
+@import '../variables';
+body{
+    background-color:$background-color;
+}
+.infos-album{
+    display: flex;
+    max-width: 1200px;
+    margin: 90px auto 110px auto;
+    column-gap: 4.5%;
+}
+@media(max-width:600px){
+    .infos-album{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+}
+.cover-album{
+    width: clamp(236px,calc(380*var(--res)),380px);
+}
+.details-album{
+    max-width: 768px;
+    width: 64%;
+}
+@media(max-width:391px){
+    .hr-tracklist, .infos-album{
+        max-width: 358px;
+    }
+}
+.infos-chanson{
+    height: 79px;
+    display: flex;
+    color: #FFFFFF;
+    max-width: 1200px;
+    margin: auto;
+}
+.numero-chanson{
+    height: 100%;
+    width: 8.5%;
+    display: flex;
+    align-items: center;
+}
+.titre-chanson{
+    height: 100%;
+    width: 83%;
+    display: flex;
+    align-items: center;
+}
+.temps-chanson{
+    height: 100%;
+    width: 8.5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+html{
+    --res:calc(0.01*10vmin);
+}
+.titre-melo{
+    font-weight: 700;
+    font-size: clamp(36px,calc(128*var(--res)),128px);
+    color: #FFFFFF;
+    margin: 0;
+}
+.sous-titre-tiakola{
+    font-size: clamp(24px,calc(40*var(--res)),40px);
+    color: #818181;
+    margin: 0;
+}
+.description-album{
+    font-size: clamp(16px,calc(24*var(--res)),24px);
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+.prix-album{
+    font-size: clamp(16px,calc(32*var(--res)),32px);
+    padding-top: 10px;
+    color: #DDBA55;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+.div-btn-acheter-album{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 22px;
+}
+.btn-acheter-album{
+    background: #FFFFFF;
+    border-radius: 18px;
+    font-weight: 700;
+    font-size: clamp(16px,calc(24*var(--res)),24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    width: fit-content;
+    padding: 10px;
+}
+.img-album-tiakola{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    max-width: 1200px;
+    width: 83.4%;
+    border: 0; 
+    border-top: 1px solid #383838;
+    margin: auto; 
+}
+.hr-tracklist{
+    border-top: 2px solid #ffffff;
+    width: 100%;
+}
+.titre-column-tracklist{
+    font-weight: bold;
+}
+@media(max-width:600px){
+    .cover-album{
+        align-items: center;
+    }
+    .details-album{
+        width: 100%;
+    }
+    .sous-titre-tiakola,.titre-melo,.description-album{
+       text-align: center;
+    }
+    .prix-album,.div-btn-acheter-album{
+        justify-content: center;
+        padding-top: 10px;
+    }
+}
