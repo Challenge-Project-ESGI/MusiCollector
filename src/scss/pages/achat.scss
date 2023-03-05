@@ -119,9 +119,9 @@ hr{
     font-weight: bold;
 }
 @media(max-width:600px){
-    .cover-album{
-        align-items: center;
-    }
+    // .cover-album{
+    //     align-items: center;
+    // }
     .details-album{
         width: 100%;
     }
@@ -132,8 +132,6 @@ hr{
         justify-content: center;
         padding-top: 10px;
     }
-}
-@media(max-width:600px){
     .infos-album{
         flex-direction: column;
         margin: auto;
@@ -145,10 +143,7 @@ hr{
     .sous-titre-tiakola{
         font-size: 24px;
     }
-    .description-album{
-        font-size: 16px;
-    }
-    .prix-album{
+    .description-album,.prix-album{
         font-size: 16px;
     }
     .btn-acheter-album{
