@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
+	<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>MusiCollector</title>
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../dist/css/pages/main.css">
-		<link rel="stylesheet" href="../dist/css/pages/panier.css">
+		<link rel="stylesheet" href="../dist/css/pages/paiement.css">
+		<script src="../src/js/JQuery 3.5.1.js"></script>
 		<script src="../src/js/main.js"></script>
 	</head>
 	<body>
@@ -31,7 +31,44 @@
 			</div>
 		</header>
 		<main>
-
+			<div class="div1">
+				<div class="div2">
+					<h1 class="titre">Livraison :</h1>
+					<div class="offers-container">
+					  <article class="offer">
+						<label for="name">Nom et Prénom :</label>
+						<input type="text" id="name" name="name" required size="120">
+						
+					</article>
+					<article class="offer">
+						<label for="name">Adresse de Livraison :</label>
+						<input type="text" id="name" name="name" required size="120">
+					  </article>
+					</div>
+					<h1 class="titre">Paiement :</h1>
+					<div class="offers-container">
+						<article class="offer">
+							<label for="name">Titulaire de la carte :</label>
+							<input type="text" id="name" name="name" required size="120">
+						</article>
+						<article class="offer">
+							<label for="name">Code de la carte :</label>
+							<input type="number" id="name" name="name" required size="120">
+						</article>
+						<article class="offer">
+							<label for="name" >Date D'expiration :</label>
+							<input type="month" name="name" min="mm-yyyy" max="mm-yyyy" required maxlength="4" size="120">
+						</article>
+						<article class="offer">
+							<label for="name">CVC :</label>
+							<input type="tel" name="name" required  maxlength="3"  size="120">
+						</article>
+						
+						<a href="#" class="cta-button">Payer</a>
+					
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer>
 			<div class="container">

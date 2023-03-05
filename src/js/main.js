@@ -14,10 +14,18 @@ function carrousel(sign){
 
 function changeSvg(){
 
-            if(document.getElementById('menu-button').style.backgroundImage = "url(../../src/assets/images/menu.svg)"){
-                document.getElementById('menu-button').style.backgroundImage = "url(../src/assets/images/cancel.svg)";
+            if($('header div button').attr("id") === "menu-button"){
+                $('header div button').removeAttr('id');
+                $('header div button').attr('id', 'cancel-button');
+                
+            }
+
+            else{
+                $('header div button').removeAttr('id');
+                $('header div button').attr('id', 'menu-button');
             }
 }
+
 
 
 
