@@ -13,21 +13,25 @@
 	</head>
 	<body>	
 		<header>
-			<div class="container">
+			<div class="container-header">
 				<button id="menu-button" onclick="changeSvg('-')"></button>
-				<a href="Index.html" id="logo-link">
-					<img class="rotate" src="../src/assets/images/LOGOMusiCollector.svg" alt="MC">
-				</a>
-				<a id="shop-button" href="panier.html"></a>
-				<nav id="site-nav">
-					<ul>
-						<li><a href="Index.html">Accueil</a></li>
-						<li><a href="achat.html">Les albums</a></li>
-						<li><a href="abonnement.html">Forfaits</a></li>
-						<li><a>|</a></li>
-						<li><a id="shop-button" href="panier.html"></a></li>
-					</ul>
-				</nav>
+				<div>
+					<a href="Index.html" id="logo-link">
+						<img src="../src/assets/images/LOGOMusiCollector.svg" width="140px"alt="MC">
+					</a>
+				</div>
+				<div class="right-side-nav">
+					<nav id="site-nav">
+						<ul>
+							<div class="lien-nav">
+							<li><a href="Index.html">Accueil</a></li>
+							<li><a href="achat.html">Les albums</a></li>
+							<li><a href="abonnement.html">Forfaits</a></li>
+							<li><a id="shop-button" href="panier.html"></a></li>
+							</div>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -43,7 +47,7 @@
 				</article>
 				<p class="prix-album">16,99€</p>
 				<div class="div-btn-acheter-album">
-					<input type="button" value="Acheter l'album" class="btn-acheter-album">
+					<input type="button" value="Acheter l'album" onclick="location.href='paiement.html'" class="btn-acheter-album">
 				</div>
 			</div>
 		</div>
@@ -54,6 +58,7 @@
 				<div class="temps-chanson titre-column-tracklist">Durée</div>
 			</div>
 		<hr class="hr-tracklist">
+		<div class="tracklist">
 			<div onclick="musique()" class="infos-chanson">
 				<div class="numero-chanson">1.</div>
 				<div class="titre-chanson">1ntr'o</div>
@@ -150,6 +155,7 @@
 				<div class="titre-chanson">R.I.Peace</div>
 				<div class="temps-chanson">3:46</div>
 			</div>
+		</div>
 			</main>
 		</body>
 			<footer>
