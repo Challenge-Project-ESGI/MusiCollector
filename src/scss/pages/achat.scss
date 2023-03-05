@@ -1,6 +1,6 @@
 @import '../variables';
 body{
-    background-color:$background-color;
+    background-color:$background;
 }
 .infos-album{
     display: flex;
@@ -8,24 +8,14 @@ body{
     margin: 90px auto 110px auto;
     column-gap: 4.5%;
 }
-@media(max-width:600px){
-    .infos-album{
-        flex-direction: column;
-        margin: auto;
-        align-items: center;
-    }
-}
 .cover-album{
-    width: clamp(236px,calc(380*var(--res)),380px);
+    // width: clamp(260px,calc(380*var(--res)),380px);
+    // height: clamp(260px,calc(380*var(--res)),380px);
+    width: 380px;
+    height: 391px;
 }
 .details-album{
-    max-width: 768px;
     width: 64%;
-}
-@media(max-width:391px){
-    .hr-tracklist, .infos-album{
-        max-width: 358px;
-    }
 }
 .infos-chanson{
     height: 79px;
@@ -39,12 +29,14 @@ body{
     width: 8.5%;
     display: flex;
     align-items: center;
+    font-size: 24px;
 }
 .titre-chanson{
     height: 100%;
     width: 83%;
     display: flex;
     align-items: center;
+    font-size: 24px;
 }
 .temps-chanson{
     height: 100%;
@@ -52,28 +44,33 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    font-size: 24px;
 }
 html{
     --res:calc(0.01*10vmin);
 }
 .titre-melo{
     font-weight: 700;
-    font-size: clamp(36px,calc(128*var(--res)),128px);
+    // font-size: clamp(36px,calc(128*var(--res)),128px);
+    font-size: 128px;
     color: #FFFFFF;
     margin: 0;
 }
 .sous-titre-tiakola{
-    font-size: clamp(24px,calc(40*var(--res)),40px);
+    // font-size: clamp(24px,calc(40*var(--res)),40px);
+    font-size: 40px;
     color: #818181;
     margin: 0;
 }
 .description-album{
-    font-size: clamp(16px,calc(24*var(--res)),24px);
+    // font-size: clamp(16px,calc(24*var(--res)),24px);
+    font-size: 24px ;
     padding-top: 10px;
     color: #FFFFFF;
 }
 .prix-album{
-    font-size: clamp(16px,calc(32*var(--res)),32px);
+    // font-size: clamp(16px,calc(32*var(--res)),32px);
+    font-size: 32px;
     padding-top: 10px;
     color: #DDBA55;
     display: flex;
@@ -89,7 +86,8 @@ html{
     background: #FFFFFF;
     border-radius: 18px;
     font-weight: 700;
-    font-size: clamp(16px,calc(24*var(--res)),24px);
+    // font-size: clamp(16px,calc(24*var(--res)),24px);
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,6 +110,11 @@ hr{
     border-top: 2px solid #ffffff;
     width: 100%;
 }
+@media(max-width:391px){
+    .hr-tracklist, .infos-album, .infos-chanson{
+        width: 358px;
+    }
+}
 .titre-column-tracklist{
     font-weight: bold;
 }
@@ -128,5 +131,34 @@ hr{
     .prix-album,.div-btn-acheter-album{
         justify-content: center;
         padding-top: 10px;
+    }
+}
+@media(max-width:600px){
+    .infos-album{
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .titre-melo{
+        font-size: 36px;
+    }
+    .sous-titre-tiakola{
+        font-size: 24px;
+    }
+    .description-album{
+        font-size: 16px;
+    }
+    .prix-album{
+        font-size: 16px;
+    }
+    .btn-acheter-album{
+        font-size: 16px;
+    }
+    .cover-album{
+        width: 236px;
+        height: 243px;
+    }
+    .temps-chanson,.numero-chanson,.titre-chanson{
+        font-size: 15px;
     }
 }
