@@ -15,7 +15,7 @@ $tertiary-color: #7DE7FE;
   }
 }
 
-.div2, .div3, .div4 {
+.section2, .section3, .section4 {
   height: 627px;
   width: 358px;
   border-radius: 20px;
@@ -27,12 +27,12 @@ $tertiary-color: #7DE7FE;
     margin-top: 20px;
   }
 
-  &.div2 {
+  &.section2 {
     border-color: $main-color;
     background-color: white;
   }
 
-  &.div3 {
+  &.section3 {
     border-color: #B9C4E4;
     background-color: white;
 
@@ -41,7 +41,7 @@ $tertiary-color: #7DE7FE;
     }
   }
 
-  &.div4 {
+  &.section4 {
     border-color: $tertiary-color;
     background-color: white;
   }
