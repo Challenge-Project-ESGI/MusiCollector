@@ -1,0 +1,170 @@
+.div1 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    @media (max-width: 1200px) {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    }
+    
+    .div2 {
+    width: 1055px;
+    height: auto;
+    border-radius: 20px;
+    border: 6px solid;
+    @media (max-width: 1200px) {
+    width: 100%;
+    max-width: 358px;
+    margin-top: 20px;
+    }
+    &.div2 {
+    border-color: #C0C0C0;
+    background-color: white;
+    @media (max-width: 1200px) {
+    border-color: #C0C0C0;
+    background-color: white;
+    }
+    }
+    }
+    
+    h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    &.titre {
+    text-align: left;
+    font-size: 3em;
+    margin-left: 50px;
+    }
+    }
+    
+    label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    margin-left: 5px;
+    height: 62.58px;
+    width: auto;
+    }
+    
+    input {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 70px;
+    padding: 5px 0 5px 20px;
+    width: 440px;
+    float: left;
+    &::first-letter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -20px;
+    margin-right: 5px;
+    }
+    }
+    
+    .offers-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .offer {
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    &.offer {
+    font-size: 20px;
+    }
+    }
+    }
+    @media (max-width: 1200px) {
+    .offer {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    }
+    }
+    }
+    
+    .cta-button {
+    display: block;
+    margin: 20px auto;
+    padding: 30px 150px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    margin-bottom: 5%;
+    }
+    
+    
+    $iphone13-max-width: 435px;
+    $div2-height: 1265px;
+    $cta-button-padding-small: 20px;
+    $cta-button-padding-large: 100px;
+    $cta-button-font-size-small: 24px;
+    $cta-button-font-size-large: 33px;
+    $offer-max-width: 400px;
+    $offer-margin: 20px;
+    $offer-padding: 20px;
+    
+    // Styles
+    
+    @media only screen and (max-width: $iphone13-max-width) {
+    .div1 {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    }
+    
+    .div2 {
+    width: 100%;
+    max-width: 358px;
+    margin-top: 20px;
+    height: $div2-height;
+    }
+    
+    h1.titre {
+    font-size: 2em;
+    margin-left: 10px;
+    }
+    
+    input, label {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    }
+    
+    input {
+    font-size: 1.2em;
+    }
+    
+    .offers-container .offer {
+    width: 100%;
+    max-width: $offer-max-width;
+    margin: $offer-margin 0;
+    padding: $offer-padding;
+    }
+    
+    .offers-container .offer h1 {
+    font-size: 20px;
+    }
+    
+    .cta-button {
+    padding: $cta-button-padding-small $cta-button-padding-large;
+    font-size: $cta-button-font-size-small;
+    line-height: 30px;
+    }
+    }
