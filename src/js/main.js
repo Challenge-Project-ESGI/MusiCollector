@@ -1,4 +1,5 @@
 var angle = 0;
+var lancer = 0;
 
 function carrousel(sign){
 
@@ -26,6 +27,16 @@ function changeSvg(){
             }
 }
 
+function musique(){
 
+    var audio = document.getElementById("audio");
 
-
+    if(lancer==1){
+        audio.pause();
+        lancer=0;
+    }
+    else{
+        audio.play();
+        lancer=1;
+    }
+}

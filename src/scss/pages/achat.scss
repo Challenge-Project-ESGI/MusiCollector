@@ -21,6 +21,10 @@ body{
     color: #FFFFFF;
     max-width: 1200px;
     margin: auto;
+
+    &:hover:not(div.titre){
+        background-color: gray;
+    }
 }
 .numero-chanson{
     height: 100%;
