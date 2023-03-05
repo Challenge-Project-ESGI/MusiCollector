@@ -16,7 +16,6 @@
     border-radius: 20px;
     border: 6px solid;
     @media (max-width: 1200px) {
-    width: 100%;
     max-width: 358px;
     margin-top: 20px;
     }
@@ -26,6 +25,8 @@
     @media (max-width: 1200px) {
     border-color: #C0C0C0;
     background-color: white;
+    height: auto;
+    width: 90%;
     }
     }
     }
@@ -166,5 +167,6 @@
     padding: $cta-button-padding-small $cta-button-padding-large;
     font-size: $cta-button-font-size-small;
     line-height: 30px;
+    margin-bottom: 15%;
     }
     }
