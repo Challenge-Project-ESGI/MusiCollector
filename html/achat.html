@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="../dist/css/pages/achat.css">
 		<script src="../src/js/JQuery 3.5.1.js"></script>
 		<script src="../src/js/main.js"></script>
+		<audio id="audio" src="../src/assets/musiques/gasolina.mp3" ></audio>
+
 	</head>
 	<body>	
 		<header>
@@ -46,16 +48,17 @@
 			</div>
 		</div>
 			<hr class="separation-infos-tracklist">
-			<div class="infos-chanson">
+			<div  class=" titre infos-chanson">
 				<div class="numero-chanson titre-column-tracklist">#</div>
 				<div class="titre-chanson titre-column-tracklist">Titre</div>
 				<div class="temps-chanson titre-column-tracklist">Durée</div>
 			</div>
 		<hr class="hr-tracklist">
-			<div class="infos-chanson">
+			<div onclick="musique()" class="infos-chanson">
 				<div class="numero-chanson">1.</div>
 				<div class="titre-chanson">1ntr'o</div>
 				<div class="temps-chanson">3:32</div>
+
 			</div>
 			<hr>
 			<div class="infos-chanson">
@@ -147,7 +150,7 @@
 				<div class="titre-chanson">R.I.Peace</div>
 				<div class="temps-chanson">3:46</div>
 			</div>
-		</main>
+			</main>
 		</body>
 			<footer>
 				<div class="container">

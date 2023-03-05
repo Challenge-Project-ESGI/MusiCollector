@@ -5,7 +5,7 @@ body{
 .infos-album{
     display: flex;
     max-width: 1200px;
-    margin: 90px auto 110px auto;
+    margin: 90px auto 90px auto;
     column-gap: 4.5%;
 }
 .cover-album{
@@ -21,6 +21,10 @@ body{
     color: #FFFFFF;
     max-width: 1200px;
     margin: auto;
+
+    &:hover:not(div.titre){
+        background-color: gray;
+    }
 }
 .numero-chanson{
     height: 100%;
@@ -106,7 +110,16 @@ hr{
 }
 .hr-tracklist{
     border-top: 2px solid #ffffff;
+    // max-width: 1200px;
     width: 100%;
+}
+.separation-infos-tracklist{
+    max-width: none;
+    width: 100%;
+}
+.tracklist{
+    max-width: 1200px;
+    margin: auto;
 }
 @media(max-width:391px){
     .hr-tracklist, .infos-album, .infos-chanson{
