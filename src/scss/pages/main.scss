@@ -25,7 +25,8 @@ button{
 header{
 	background-color: var(--black);
 	padding: 1rem 0;
-	position: fixed;
+	// position: fixed;
+	position: sticky;
 	width: 100%;
 	z-index: 10;
 
