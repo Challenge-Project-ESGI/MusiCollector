@@ -9,27 +9,25 @@
 		<script src="../src/js/JQuery 3.5.1.js"></script>
 		<script src="../src/js/main.js"></script>
 	</head>
-	<body>
-		
-		<header>
-			<div class="container">
-				<button id="menu-button" onclick="changeSvg('-')"></button>
-
-				<a href="Index.html" id="logo-link">
-					<img class="rotate" src="../src/assets/images/LOGOMusiCollector.svg" alt="MC">
-				</a>
-				<a id="shop-button" href="panier.html"></a>
-				<nav id="site-nav">
-					<ul>
-						<li><a href="Index.html">Accueil</a></li>
-						<li><a href="achat.html">Les albums</a></li>
-						<li><a href="abonnement.html">Abonnement</a></li>
-						<li><a>|</a></li>
-						<li><a id="shop-button" href="panier.html"></a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
+	<header>
+		<div class="container">
+			<button id="menu-button" onclick="changeSvg('-')"></button>
+			<a href="Index.html" id="logo-link">
+				<img class="rotate" src="../src/assets/images/LOGOMusiCollector.svg" alt="MC">
+			</a>
+			<a id="shop-button" href="panier.html"></a>
+			<nav id="site-nav">
+				<ul>
+					<li><a href="Index.html">Accueil</a></li>
+					<li><a href="achat.html">Les albums</a></li>
+					<li><a href="abonnement.html">Abonnement</a></li>
+					<li><a>|</a></li>
+					<li><a id="shop-button" href="panier.html"></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<body>	
 		<div class="infos-album">
 			<div class="cover-album">
 				<img src="../src/assets/images/tiakolaAlbum.jpg" alt="" class="img-album-tiakola">
@@ -147,6 +145,7 @@
 				<div class="titre-chanson">R.I.Peace</div>
 				<div class="temps-chanson">3:46</div>
 			</div>
+		</body>
 			<footer>
 				<div class="container">
 					<nav>
@@ -162,14 +161,12 @@
 						<small>
 							© 2023 MusiCollector, Inc. Tous droits réservés
 						</small>
-					</nav>
-				
+					</nav>				
 				</div>
 			</footer>
-			<script type="text/javascript">
+			<!-- <script type="text/javascript">
 				document.getElementById('menu-button').addEventListener('click', function(e){
 					document.getElementById('site-nav').classList.toggle('open');
 				})
-			</script>
-	</body>
+			</script> -->
 </html>
