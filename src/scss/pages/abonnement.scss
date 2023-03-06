@@ -17,10 +17,16 @@
     margin-top: 0;
   }
 }
+
 .types-forfaits{
   color: $texte-types-forfaits;
   font-size: 36px;
   margin-top: 90px;
+}
+@media(max-width:600px){
+  .types-forfaits{
+    font-size: 26px;
+  }
 }
 .section2, .section3, .section4 {
   height: 627px;
@@ -70,8 +76,11 @@ h1 {
   .offer {
     width: 400px;
     padding: 20px;
-    text-align: center;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: space-between;
     @media (max-width: 1200px) {
       width: 100%;
       max-width: 400px;
@@ -100,6 +109,9 @@ h1 {
       padding: 40px;
       border-top: solid thin $border-ul-abonnement;
       border-bottom: solid thin $border-ul-abonnement;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       li {
         margin-bottom: 1em;
         &:last-child {
