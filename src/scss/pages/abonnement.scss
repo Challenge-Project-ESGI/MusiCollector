@@ -68,6 +68,18 @@ h1 {
     margin-bottom: 10px;   
   }
 }
+.prix{
+  text-align: center;
+}
+.reduction{
+  text-align: center;
+}
+.div-validation{
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
 .offers-container {
   display: flex;
   justify-content: center;
@@ -75,7 +87,7 @@ h1 {
 
   .offer {
     width: 400px;
-    padding: 20px;
+    // padding: 20px;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -113,7 +125,7 @@ h1 {
       flex-direction: column;
       align-items: flex-start;
       li {
-        margin-bottom: 1em;
+        // margin-bottom: 1em;
         &:last-child {
           margin-bottom: 2;
         }
