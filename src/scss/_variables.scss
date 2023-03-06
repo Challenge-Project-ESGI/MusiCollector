@@ -1,23 +1,58 @@
 //Background
 
+//Général
 $background-site:#181818; 
-$background-tracklist-hover:#262626;
-$background-btn-acheter-album:#FFFFFF;
-$background-btn-acheter-album-hover:#c7c7c7;
 $background-header:#111111;
 $background-footer:#111111;
 
+//Album
+$background-tracklist-hover:#262626;
+$background-btn-acheter-album:#FFFFFF;
+$background-btn-acheter-album-hover:#c7c7c7;
+
+//Abonnement
+$background-btn-gold: #FFB200;
+$background-btn-platine: #B9C4E4;
+$background-btn-diamant: #7DE7FE;
+$background-color-section:#FFFFFF;
+
+
+
 //Texte
+
+//Général
+$texte-footer:#FFFFFF;
+$texte-header:#FFFFFF;
+
+//Achat
 $texte-infos-chanson:#FFFFFF;
 $texte-titre-melo:#FFFFFF;
 $texte-sous-titre-tiakola:#818181;
 $texte-description-album:#FFFFFF;
 $texte-prix-album:#DDBA55;
 $texte-btn-acheter-album:#000000;
-$texte-footer:#FFFFFF;
-$texte-header:#FFFFFF;
 $texte-lien-header-hover:#fddb3a;
 
+//Abonnement
+$texte-button-abonnement:black;
+
+
 //Border
+
+//Achat
 $border-hr:#383838;
 $border-hr-tracklist:#ffffff;
+
+//Abonnement
+$border-section-gold:#FFB200;
+$border-section-platine:#B9C4E4;
+$border-section-diamant: #7DE7FE;
+$border-ul-abonnement:lightgrey;
+$border-button-abonnement:black;
+
+
+
+//Box-Shadow
+
+//Abonnement
+$box-shadow-button-abonnement:gray;
