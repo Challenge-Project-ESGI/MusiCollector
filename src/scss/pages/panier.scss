@@ -9,25 +9,27 @@ hr.dash {
 
 .cta-button {
 display: block;
-margin: 20px auto;
-padding: 30px 150px;
+margin: 20px auto 40px auto;
+// padding: 30px 150px;
+padding: 10px 20px;
 background-color: #000000;
 color: white;
 text-decoration: none;
 border-radius: 10px;
 box-shadow: 2px 2px 8px gray;
 font-weight: 700;
-font-size: 33px;
+// font-size: 33px
+font-size: 22px;
 line-height: 40px;
-margin-bottom: 5%;
-width: 60%;
+// margin-bottom: 5%;
+// width: 60%;
 }
 
 .div1 {
+	margin: 90px auto;
 	width: auto;
 	display: flex;
 	justify-content: center;
-	margin-bottom: 5%;
 	@media (max-width: 1200px) {
 	width: 100%;
 	flex-wrap: wrap;
@@ -36,18 +38,18 @@ width: 60%;
 }
 	
 .div2 {
-	width: 1055px;
+	width: 1200px;
 	height: auto;
 	border-radius: 20px;
 	border: 6px solid;
-	@media (max-width: 1200px) {
-	max-width: 358px;
+	@media (max-width: 600px) {
+	// max-width: 358px;
 	margin-top: 20px;
 	}
 	&.div2 {
 	border-color: #C0C0C0;
 	background-color: white;
-	@media (max-width: 1200px) {
+	@media (max-width: 600px) {
 	border-color: #C0C0C0;
 	background-color: white;
 	height: auto;
@@ -58,7 +60,8 @@ width: 60%;
 
 .div-info
 {
-	padding: 5%;
+	// padding: 5%;
+	padding: 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -67,11 +70,11 @@ width: 60%;
 	width: 100%;
 	height: auto;
 	border-radius: 20px;
-	@media (max-width: 1200px) {
+	@media (max-width: 600px) {
 	}
 	&.panier {
 	background-color: #D9D9D9;
-	@media (max-width: 1200px) {
+	@media (max-width: 600px) {
 	border-color: #D9D9D9;
 	background-color: #D9D9D9;
 	height: auto;
@@ -88,7 +91,7 @@ width: 60%;
 	.offer {
 		padding: 20px;
 		text-align: center;
-		margin: 20px;
+		margin: 0px;
 		width: 100%;
 	}
 
@@ -102,7 +105,7 @@ width: 60%;
 }
 label{
 	font-size: 15px;
-	height: 65%;
+	// height: 65%;
 }
 }
 }
@@ -112,18 +115,21 @@ display: block;
 margin-left: 1%;
 font: 1rem 'Fira Sans', sans-serif;
 text-align: left;
-font-size: 30px;
-height: 62.58px;
+// font-size: 30px;
+font-size: 24px;
+// height: 62.58px;
+padding-bottom: 20px;
 width: 100%;
 }
 	
 
 input.btn-entrer-ici {
-width: 80%;
+// width: 80%;
 margin-left: 1%;
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-font-size: 24px;
+// font-size: 24px;
+font-size: 18px;
 padding: 5px 0 5px 20px;
 float: left;
 height: 35%;
@@ -140,22 +146,25 @@ width: 20%;
 margin-right: 2%;
 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-font-size: 24px;
+// font-size: 24px;
+font-size: 18px;
 padding: 5px 0 5px 0px;
 float: left;
 height: 35%;
+background-color: #ececec;
 }
 
 .div-btn-valider-album{
 	display: flex;
-	justify-content: space-between;
+	// justify-content: space-between;
+	column-gap: 30px;
 	align-items: center;
-	justify-content: flex-end;
+	// justify-content: flex-end;
 }
 
 .div-btn-acheter-album{
 	display: flex;
-	justify-content: flex-end;
+	// justify-content: flex-end;
 	padding-top: 22px;
     }
     .btn-acheter-album{
@@ -200,7 +209,8 @@ height: 35%;
 .titre-melo{
     font-weight: 700;
     // font-size: clamp(36px,calc(128*var(--res)),128px);
-    font-size: 128px;
+    // font-size: 128px;
+	font-size: 116px;
     color: #000000;
     margin: 0;
 }
@@ -214,21 +224,24 @@ height: 35%;
 
 .legende-tiakola{
 	// font-size: clamp(24px,calc(40*var(--res)),40px);
-	font-size: 25px;
+	// font-size: 25px;
+	font-size: 22px;
 	color: #4D4D4D;
 	margin: 0;
     }
 
 .legende-tiakola-gold{
 	// font-size: clamp(24px,calc(40*var(--res)),40px);
-	font-size: 30px;
+	// font-size: 30px;
+	font-size: 22px;
 	color: #FFB200;
 	margin: 0;
 }
 
 .legende-tiakola-gras{
 	// font-size: clamp(24px,calc(40*var(--res)),40px);
-	font-size: 30px;
+	// font-size: 30px;
+	font-size: 26px;
 	color: #000000;
 	margin: 0;
 }
@@ -264,7 +277,7 @@ height: 35%;
 
 $cta-button-padding-small: 20px;
 $cta-button-padding-large: 100px;
-$cta-button-font-size-small: 24px;
+$cta-button-font-size-small: 18px;
 $cta-button-font-size-large: 33px;
 
 
@@ -306,11 +319,11 @@ $cta-button-font-size-large: 33px;
     .cta-button {
 	//padding: $cta-button-padding-small $cta-button-padding-large;
 	
-	padding: 15px 23px;
+	padding: 10px 20px;
 	font-size: $cta-button-font-size-small;
 	line-height: 30px;
-	width: 80%;
-	margin-bottom: 8%;
+	// width: 80%;
+	// margin-bottom: 8%;
 	}
 
 
