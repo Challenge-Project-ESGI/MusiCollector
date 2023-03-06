@@ -1,21 +1,32 @@
 @import '../variables';
 .container{
   max-width: 1200px;
-  margin: auto;
+  margin: 90px auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+@media(max-width:1000px){
+  .container{
+  flex-direction: column;
+  row-gap: 50px;
+  display: flex;
+  align-content: center;
+  }
+  .section1,.section2,.section3{
+    margin-top: 0;
+  }
+}
+.types-forfaits{
+  color: $texte-types-forfaits;
+  font-size: 36px;
+  margin-top: 90px;
 }
 .section2, .section3, .section4 {
   height: 627px;
   width: 358px;
   border-radius: 20px;
   border: 6px solid;
-  @media (max-width: 1200px) {
-    width: 100%;
-    max-width: 358px;
-    margin-top: 20px;
-  }
   &.section2 {
     border-color: $border-section-gold;
     background-color: $background-color-section;
