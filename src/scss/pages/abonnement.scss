@@ -1,8 +1,9 @@
+@import '../variables';
 $main-color: #FFB200;
 $secondary-color: #B9C4E4;
 $tertiary-color: #7DE7FE;
 body{
-  background-color: #181818;
+	background-color: $background-site;
 }
 .div1{
   width: 1200px;

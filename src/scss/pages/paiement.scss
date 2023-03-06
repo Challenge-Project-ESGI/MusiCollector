@@ -1,3 +1,7 @@
+@import '../variables';
+body{
+	background-color: $background-site;
+}
 .div1 {
     width: auto;
     display: flex;

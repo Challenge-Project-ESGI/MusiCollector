@@ -1,20 +1,21 @@
 @import '../variables';
-.container-header{
-    justify-content: space-between;
-    max-width: 1200px;
-    display: flex;
-    margin: auto;
-}
-.right-side-nav{
-    display: flex;
-    max-width: 520px;
-}
-.lien-nav{
-    display: flex;
-    width: 520px;
-    justify-content: space-evenly;
-    align-items: center;
-}
+@import '../layout/header';
+// .container-header{
+//     justify-content: space-between;
+//     max-width: 1200px;
+//     display: flex;
+//     margin: auto;
+// }
+// .right-side-nav{
+//     display: flex;
+//     max-width: 520px;
+// }
+// .lien-nav{
+//     display: flex;
+//     width: 520px;
+//     justify-content: space-evenly;
+//     align-items: center;
+// }
 body{
     background-color:$background-site;
 }
