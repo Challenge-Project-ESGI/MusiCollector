@@ -54,6 +54,8 @@ h1 {
   font-size: 2em;
   margin-bottom: 20px;
   height: 3%;
+  width: fit-content;
+  margin: auto;
   &#gold{
     background-color:$background-btn-gold;
   }
@@ -101,7 +103,6 @@ h1 {
     h1 {
       font-size: 24px;
       font-weight: 400;
-      margin: 0;
       text-align: center;
       &.offer {
         font-size: 20px;
