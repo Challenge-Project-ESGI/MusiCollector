@@ -16,15 +16,10 @@
     justify-content: space-between;
     align-items: center;
 }
-// a{
-// 	text-decoration: none;
-// 	color: currentColor;
-// }
-// button{
-// 	border: none;
-// 	background-color: transparent;
-// 	cursor: pointer;
-// }
+.logo{
+	position: relative;
+	z-index: 10;
+}
 .header{
 	background-color: $background-header;
 	padding: 1rem 0;
@@ -146,9 +141,11 @@ nav div a img{
 		background-size: contain;
 		&#menu-button{
 			background-image: url('../../../src/assets/images/menu.svg');
+			margin-left: 15px;
 	}
 		&#cancel-button{
 			background-image: url('../../../src/assets/images/cancel.svg');
+			margin-left: 15px;
 		}
 }
 }

@@ -40,3 +40,8 @@ function musique(){
         lancer=1;
     }
 }
+const logoElement = document.querySelector("#menu-button");
+
+logoElement.addEventListener("click", function() {
+  logoElement.style.display = "none";
+});
